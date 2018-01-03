@@ -5,7 +5,7 @@
     <%= text_field_tag :username, params[:username], placeholder: 'Github Username', style: "color: black" %>
     <%= text_field_tag :codechef, params[:codechef], placeholder: 'Codechef Username', style: "color: black" %>
     <%= text_field_tag :codeforce, params[:codeforce], placeholder: 'Codeforce Username', style: "color: black" %>
-    <%= submit_tag 'Search', name: nil, class: 'btn btn-primary btn-sm' %>
+    <%= submit_tag 'Search', name: nil, class: 'btn search-button' %>
     <% end %>
     <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn submit-button margin-left-20' %>
     <% if @language && @username && @username!='' %>
